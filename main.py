@@ -12,7 +12,7 @@ from langchain.schema import Document
 
 from summarizer import summarize_long_content
 
-load_dotenv()
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
 st.set_page_config(layout="wide")
 st.title("📚 News Research Tool")
