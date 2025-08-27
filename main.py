@@ -18,6 +18,7 @@ from langchain.vectorstores import FAISS
 from langchain.schema import Document
 
 from summarizer import summarize_long_content
+from langchain_openai import ChatOpenAI
 
 st.set_page_config(layout="wide")
 st.title("📚 News Research Tool")
@@ -34,7 +35,11 @@ urls = [st.sidebar.text_input(f"URL {i+1}") for i in range(3)]
 process_url_clicked = st.sidebar.button("Process URLs")
 
 # LLM setup
-llm = OpenAI(temperature=0.9, max_tokens=500)
+llm = ChatOpenAI(
+    model="gpt-4o-mini", 
+    temperature=0.9,
+    max_tokens=500
+)
 index_dir = "faiss_index"
 
 # Process URLs
