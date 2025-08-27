@@ -9,16 +9,21 @@ openai.api_key = os.environ["OPENAI_API_KEY"]
 
 from dotenv import load_dotenv
 
-from langchain import OpenAI
+# from langchain import OpenAI
+# from langchain.chains import RetrievalQAWithSourcesChain
+# from langchain.document_loaders import NewsURLLoader, UnstructuredURLLoader
+# from langchain.text_splitter import RecursiveCharacterTextSplitter
+# from langchain.embeddings import OpenAIEmbeddings
+# from langchain.vectorstores import FAISS
+# from langchain.schema import Document
+
+from langchain_community.document_loaders import NewsURLLoader, UnstructuredURLLoader
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_openai import OpenAIEmbeddings, ChatOpenAI
+from langchain_community.vectorstores import FAISS
 from langchain.chains import RetrievalQAWithSourcesChain
-from langchain.document_loaders import NewsURLLoader, UnstructuredURLLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.vectorstores import FAISS
-from langchain.schema import Document
 
 from summarizer import summarize_long_content
-from langchain_openai import ChatOpenAI
 
 st.set_page_config(layout="wide")
 st.title("📚 News Research Tool")
