@@ -1,5 +1,4 @@
 # 📰 AI-Powered News Article Analyzer  
-### Retrieval-Augmented Generation (RAG) • LangChain • Custom Embeddings • OpenAI GPT-4.1
 
 This project is a **RAG-based news analysis system** that allows users to:
 
@@ -10,24 +9,24 @@ This project is a **RAG-based news analysis system** that allows users to:
 
 ---
 
-## 🚀 Features
+## Features
 
-### 🔹 Retrieval-Augmented Generation (RAG)
+### Retrieval-Augmented Generation (RAG)
 - Extracts text from URLs  
 - Splits into semantic chunks  
 - Embeds using **custom OpenAI embeddings**  
 - Stores in FAISS vector database  
 - Enables precise retrieval for Q&A
 
-### 🔹 Company-Specific Summaries  
+### Company-Specific Summaries  
 Uses a custom financial-analysis prompt for targeted insights.
 
-### 🔹 Clean Corporate UI  
+### Clean Corporate UI  
 Built with Streamlit.
 
 ---
 
-## 🧱 Architecture
+## Architecture
 
 ```mermaid
 flowchart TD
