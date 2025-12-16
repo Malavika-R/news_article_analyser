@@ -1,0 +1,11 @@
+# config.yaml
+# ------------
+# Global configuration for the project.
+
+embedding_model: "text-embedding-3-small"
+llm_model: "gpt-4.1"
+
+chunk_size: 1000
+chunk_overlap: 200
+
+retriever_k: 4

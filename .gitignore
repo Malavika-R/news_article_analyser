@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.*
+
+venv/
+.venv/
+
+# Streamlit / Cache
+.streamlit/
+.cache/
+
+# VS Code
+.vscode/
+
+# Tests
+tests/
+
+# OS
+.DS_Store
+
+# FAISS / vector stores (optional)
+faiss_index/
