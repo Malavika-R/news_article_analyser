@@ -5,7 +5,7 @@ __pycache__/
 *.pyd
 .env
 .env.*
-
+configs/secrets.env.example
 venv/
 .venv/
 
